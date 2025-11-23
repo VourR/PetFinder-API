@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require("multer");
 const upload = multer();
 
-const petController = require("../controllers/PetController");
+const petController = require("../controllers/petController");
 
 router.get("/", petController.getPets);
 router.get("/:id", petController.getPetById);

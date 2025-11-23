@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require("multer");
 const upload = multer();
 
-const shelterController = require("../controllers/ShelterController");
+const shelterController = require("../controllers/shelterController");
 
 router.get("/", shelterController.getShelters);
 router.get("/:id", shelterController.getShelterById);
